@@ -1,8 +1,170 @@
 body {
-  padding: 50px;
+  padding: 0;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url(/images/6396478.jpg);
+  background-size: cover;
 }
 
-a {
-  color: #00b7ff;
+.home-body {
+  padding: 0;
+  margin: 0;
+  background: url(/images/Label-with-Movie-Film-PPT-Backgrounds.jpg);
+  background-size: cover;
+}
+
+/* Nav Bar */
+nav {
+  background-color: #00b7ff;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  font-size: 18px;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+  align-self: center;
+}
+
+/* Home page */
+.home-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 20px;
+  margin-top: 60px;
+  text-align: center;
+  max-width: 200px;
+}
+
+.home-links a {
+  padding: 10px;
+  color: #fff;
+  background-color: #ffffff70;
+  border-radius: 20px;
+}
+
+.home-links h2 {
+  font-size: 50px;
+  color: #fff;
+  max-width: 300px;
+  text-align: center;
+  align-self: center;
+}
+
+.celebrities-container,
+.movies-container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #f1f1f1e2;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.movie-link,
+.celebrity {
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  display: block;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.create-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+form label[for="cast-select"] {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+form option[value=""] {
+  display: none;
 }

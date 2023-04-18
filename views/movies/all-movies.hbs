@@ -1,0 +1,12 @@
+<div class="movies-container">
+  <h2>Movies</h2>
+  <ul>
+    {{#each movies}}
+      <li><a
+          href="/movies/{{this._id}}"
+          class="movie-link"
+        >{{this.title}}</a></li>
+    {{/each}}
+  </ul>
+  <a href="/movies/create" class="create-btn">Add a movie</a>
+</div>

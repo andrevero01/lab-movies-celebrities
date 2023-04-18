@@ -1,0 +1,28 @@
+{{! <div class="new-movie-container"> }}
+<h2>Add a movie</h2>
+<form action="/movies/create" method="POST">
+  <label>
+    Title:
+    <input type="text" name="title" />
+  </label>
+  <label>
+    Genre:
+    <input type="text" name="genre" />
+  </label>
+  <label>
+    Plot:
+    <input type="text" name="plot" />
+  </label>
+  <br />
+  <label for="cast-select">Cast:
+    <select name="cast">
+      <option disable selected value=""></option>
+      {{#each dbCelebrities}}
+        <option value="{{this._id}}"> {{this.name}} </option>
+      {{/each}}
+    </select>
+  </label>
+  <br />
+  <button type="submit">Submit</button>
+</form>
+{{! </div> }}

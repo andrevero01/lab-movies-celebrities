@@ -1,0 +1,9 @@
+<div class="celebrities-container">
+  <h2>Celebrities</h2>
+  <ul>
+    {{#each celebrities}}
+      <li class="celebrity">{{this.name}}</li>
+    {{/each}}
+  </ul>
+  <a href="/celebrities/create" class="create-btn">Add a celebrity</a>
+</div>
